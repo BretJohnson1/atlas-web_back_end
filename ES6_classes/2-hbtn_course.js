@@ -3,7 +3,7 @@ export default class HolbertonCourse {
   constructor(name, length, students) {
     // verify name
     if (typeof name !== 'string' || name.trim().length === 0) {
-    throw new Error('Name must be a non-empty string');
+      throw new Error('Name must be a non-empty string');
     }
 
     // verify length
