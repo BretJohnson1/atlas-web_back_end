@@ -13,8 +13,6 @@ export default class Pricing {
     this._currency = currency;
   }
 
-
-
   // setters
   get amount() {
     return this._amount;
