@@ -14,21 +14,20 @@ export default class Currency {
     this._name = name;
   }
 
-  // getters
+  // setters
   get code() {
     return this._code;
   }
 
-  get name() {
-    return this._name;
-  }
-
-  // setters
   set code(newCode) {
     if (typeof newCode !== 'string' || newCode.trim().length === 0) {
       throw new Error('Code must be a non empty string');
     }
     this._code = newCode;
+  }
+
+  get name() {
+    return this._name;
   }
 
   set name(newName) {
