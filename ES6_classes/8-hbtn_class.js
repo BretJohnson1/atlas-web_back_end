@@ -1,4 +1,4 @@
-export default function HolbertonClass {
+export default class HolbertonClass {
   // constructor
   constructor(size, location) {
     // verify size
