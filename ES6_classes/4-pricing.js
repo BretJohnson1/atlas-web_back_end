@@ -13,21 +13,22 @@ export default class Pricing {
     this._currency = currency;
   }
 
-  // getters
+
+
+  // setters
   get amount() {
     return this._amount;
   }
 
-  get currency() {
-    return this._currency;
-  }
-
-  // setters
   set amount(newAmount) {
     if (typeof newAmount !== 'number' || newAmount < 0) {
       throw new Error('Amount must be a positive or zero number');
     }
     this._amount = newAmount;
+  }
+
+  get currency() {
+    return this._currency;
   }
 
   set currency(newCurrency) {
