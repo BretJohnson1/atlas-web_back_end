@@ -12,7 +12,7 @@ export default function handleProfileSignup() {
     .then((data) => {
       fristName = data.fristName;
       lastName = data.lastName;
-      console.log('photo-profile-1 Guillaume Salva');
+      console.log('${body} ${firstName} ${lastName}');
     })
     .catch(() => console.log('Signup system offline'));
   })
