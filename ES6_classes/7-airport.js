@@ -2,7 +2,7 @@ export default class Airport {
   // constructor method
   constructor(name, code) {
     // verfiy name
-    if (typeof name !== 'string || name.length <= 0') {
+    if (typeof name !== 'string' || name.length <= 0) {
       throw new Error('Name must be a non-empty string');
     }
 
