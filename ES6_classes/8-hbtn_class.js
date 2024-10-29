@@ -25,11 +25,19 @@ export default class HolbertonClass {
   }
 
   // setters
+  get size() {
+    return this._size;
+  }
+
   set size(newSize) {
     if (typeof newSize !== 'number' || newSize <= 0) {
       throw new Error('Size must be a non-sero number');
     }
     this._size = newSize;
+  }
+
+  get location() {
+    return this._location;
   }
 
   set location(newLocation) {
