@@ -4,7 +4,7 @@ export default function updateUniqueItems(groceries) {
   groceries.forEach((val, key) => {
     if (val === 1) {
       groceries.set(key, 100);
-  }
+    }
   });
   return groceries;
 }
